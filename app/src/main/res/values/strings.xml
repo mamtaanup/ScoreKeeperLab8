@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ScoreKeeperSolution</string>
+    <string name="title_string">ScoreKeeper</string>
+    <string name="teamA_title_string">Team A</string>
+    <string name="teamB_title_string">Team B</string>
+    <string name="increase_string">+</string>
+    <string name="decrease_string">-</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_string"
+            android:textSize="36sp"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/teamA_textview"
+            android:layout_width="175sp"
+            android:layout_height="wrap_content"
+            android:text="@string/teamA_title_string"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/teamB_textview"
+            android:layout_width="175sp"
+            android:layout_height="wrap_content"
+            android:text="@string/teamB_title_string"
+            android:textSize="28sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/teamA_score_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/teamB_score_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="28sp" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/increase_TeamA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/increase_string" />
+
+        <Button
+            android:id="@+id/increase_TeamB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/increase_string" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/decrease_TeamA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decrease_string"
+            tools:layout_editor_absoluteX="271dp"
+            tools:layout_editor_absoluteY="362dp" />
+
+        <Button
+            android:id="@+id/decrease_TeamB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decrease_string"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="362dp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change score by:"/>
+        <RadioGroup
+            android:id="@+id/changeRadioGroup"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_score_1"
+                android:text="2" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_score_2"
+                android:text="4" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_score_3"
+                android:text="6" />
+        </RadioGroup>
+    </TableRow>
+</TableLayout>
